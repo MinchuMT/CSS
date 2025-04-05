@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+             *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 1.1px;
+        }
+        .container{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: lightblue;
+        }
+        .container form{
+            width: 300px;
+            padding: 20px;
+            background-color: rgba(138, 11, 150, 0.925);
+            border: 1.5px dashed red;
+        }
+        input:enabled:focus{
+            outline: 2px solid rebeccapurple;
+            outline-offset: 1.2px;
+            background-color: blue;
+        }
+        form button:enabled{
+            width: 100%;
+            padding: 8px;
+            font-size: 1rem;
+            font-weight: 300;
+            background-color: blueviolet;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 6px;
+        }
+        form button:enabled:hover{
+            opacity: 0.7;
+        }
+        form button:enabled:focus{
+            transform: scale(0.8);
+        }
+        form input:autofill{
+            border: 1.3px solid green !important;
+            background-color: aqua !important;
+        }
+        input:disabled{
+            width: 100%;
+            padding: 8px;
+            border: 1px solid purple;
+            background-color: palevioletred;
+        }
+        button:disabled{
+            width: 100%;
+            margin-top: 10px;
+            background-color: gray;
+            border: none;
+            padding: 8px;
+        }
+        p:empty{
+            padding: 10px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h3>Create account</h3>
+            <label for="name">username</label>
+            <input type="text" placeholder="enter your name" name="name" id="name" required>
+            <label for="name">email</label>
+            <input type="email" placeholder="enter your email" name="email" id="email" required>
+            <button type="button">Create account</button>
+            <button type="reset" disabled>login</button>
+            <br><br>
+            <p>this is the first content</p>
+            <p>this is the second content</p>
+            <p></p>
+        </form>
+    </div> 
+</body>
+</html>

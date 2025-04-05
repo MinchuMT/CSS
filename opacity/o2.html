@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+            min-height: 80vh;
+            padding: 4%;
+            display: flex;
+            gap: 30px;
+            background-color: lightblue;
+        }
+        .card{
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .card img{
+            width: 100%;
+            margin-bottom: 10px;
+            border-radius: 20px;
+        }
+        .card :nth-child(1){
+            opacity: 0.2;
+        }
+        .card:nth-child(2){
+            filter: blur(1px);
+        }
+        .card:nth-child(3){
+            filter: blur(20px);
+        }
+        .container1{
+            min-height: 80vh;
+            background-color: #000;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circle1{
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            background-color: beige;
+            filter: blur();
+            position: absolute;
+            right: 10px;
+            top: 0px;
+        }
+        .circle2{
+            width: 400px;
+            height: 400px;
+            border-radius: 100%;
+            background-color: beige;
+            filter: blur(100px);
+            position: absolute;
+            left: (100px);
+        }
+        .container1 h1{
+            font-size: 4rem;
+            color: #fff;
+        }
+       
+    </style>
+</head>
+<body>
+    <center><h1>blur</h1></center>
+    <div class="container">
+        <div class="card">
+            <img src="data:image/png;base64,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" alt="">
+            <h3>card heading</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis a, possimus distinctio repellat laudantium exercitationem sunt in expedita similique incidunt nisi, amet necessitatibus ipsam recusandae beatae reiciendis ea iusto aperiam?</p>
+        </div>
+        <div class="card">
+            <img src="data:image/png;base64,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" alt="">
+            <h3>card heading</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis a, possimus distinctio repellat laudantium exercitationem sunt in expedita similique incidunt nisi, amet necessitatibus ipsam recusandae beatae reiciendis ea iusto aperiam?</p>
+        </div>
+        <div class="card">
+            <img src="data:image/png;base64,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" alt="">
+            <h3>card heading</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis a, possimus distinctio repellat laudantium exercitationem sunt in expedita similique incidunt nisi, amet necessitatibus ipsam recusandae beatae reiciendis ea iusto aperiam?</p>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <h1>hello filter blur</h1>
+    </div>
+</body>
+</html>

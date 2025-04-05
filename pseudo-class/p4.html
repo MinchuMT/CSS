@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 1.1px;
+        }
+        .container{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: lightblue;
+        }
+        .container form{
+            width: 300px;
+            padding: 20px;
+            background-color: white;
+            border: 1.5px dashed red ;
+        }
+        input{
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            margin-top: 5px;
+            border: none;
+            outline: none;
+            border: 1.2px solid gray;
+            border-radius: 5px;
+        }
+        label{
+            font-weight: 100;
+        }
+        form h3{
+            margin-bottom: 10px;
+        }
+        input:focus{
+            outline: 2px solid pink;
+            outline-offset: 1.2px;
+            background-color: white;
+        }
+        form button{
+            width: 100%;
+            padding: 8px;
+            font-size: 1rem;
+            font-weight: 300;
+            background-color: bisque;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover{
+            opacity: 0.7;
+        }
+        form button:focus{
+            transform: scale(0.8);
+        }
+        form input:autofill{
+            border: 1.3px solid green !important;
+            background-color: blueviolet !important;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h3>Create account</h3>
+            <label for="name">username</label>
+            <input type="text" placeholder="enter your name" name="name" id="name" required>
+            <label for="name">email</label>
+            <input type="email" placeholder="enter your email" name="email" id="email" required>
+            <button type="button">Create account</button>
+        </form>
+    </div>
+</body>
+</html>

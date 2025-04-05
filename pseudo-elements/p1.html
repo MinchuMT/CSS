@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            padding: 5%;
+        }
+        section div{
+            padding: 20px;
+            line-height: 1.8;
+            font-size: 1.2rem;
+            font-weight: 300;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 30px;
+        }
+        .p1{
+            background-color: azure;
+            border-bottom: 10px solid red;
+        }
+        .p2{
+            background-color: plum;
+            border-bottom: 10px solid red;
+        }
+        .p3{
+            background-color: peru;
+            border-bottom: 10px solid red;
+        }
+        .p2::first-line{
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            color: blue;
+        }
+        .p3::first-letter{
+            font-size: 3rem;
+            font-weight: 600;
+            color: blue;
+        }
+        .p3::first-line{
+            color: brown;
+        }
+        h1::first-letter{
+            color: red;
+            font-size: 3rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: italic;
+        }
+        center p::first-line{
+            color: darkgoldenrod;
+            font-size: 1.3rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>css pseudo elements</h1></center>
+    <hr>
+    <section>
+        <div class="p1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae velit fuga, aliquam minus tenetur ad aspernatur ex omnis perferendis inventore aperiam voluptate sit quaerat suscipit, non recusandae quos autem sapiente.
+        </div>
+        <div class="p2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae velit fuga, aliquam minus tenetur ad aspernatur ex omnis perferendis inventore aperiam voluptate sit quaerat suscipit, non recusandae quos autem sapiente.
+        </div>
+        <div class="p3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae velit fuga, aliquam minus tenetur ad aspernatur ex omnis perferendis inventore aperiam voluptate sit quaerat suscipit, non recusandae quos autem sapiente.
+        </div>
+    </section>
+</body>
+</html>

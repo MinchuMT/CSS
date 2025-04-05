@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            padding: 30px;
+        }
+        .container div{
+            width: 400px;
+            height: 200px;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: auto;
+            margin-bottom: 20px;
+            background-color: lightgray;
+        }
+        .container div h1{
+            font-weight: 100 !important;
+        }
+        .b1{
+            border-inline: 20px dashed darkgreen;
+        }
+        .b2{
+            border-inline: 20px dashed darkgreen;
+            writing-mode: vertical-lr;
+        }
+        .b3{
+            border-inline-start: 10px double darkred;
+        }
+        .b4{
+            border-inline-end: 30px solid darkmagenta;
+        }
+
+    </style>
+</head>
+<body>
+    <center><h1>border-inline</h1></center>
+    <hr>
+    <div class="container">
+    <div class="b1">block1</div>
+    <div class="b2">block2</div>
+    <div class="b3">block3</div>
+    <div class="b4">block4</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            padding: 5%;
+        }
+        section div{
+            padding: 20px;
+            line-height: 1.8;
+            font-size: 1.2rem;
+            font-weight: 300;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 30px;
+        }
+        .p1{
+            background-color: rgb(187, 36, 61);
+            border-bottom: 10px solid lightblue;
+        }
+        .p2{
+            background-color: rgb(187, 36, 61);
+            border-bottom: 10px solid lightgray;
+        }
+        .p3{
+            background-color: rgb(187, 36, 61);
+            border-bottom: 10px solid lightslategrey;
+        }
+        .p2::selection{
+            background-color: rgb(212, 21, 21);
+            color: #fff;
+        }
+        .p1::selection{
+            background-color:palevioletred;
+            color: #fff;
+        }
+        .h1::selection{
+            background-color: darkorange;
+            color: #0c0c0c;
+        }
+        *::selection{
+            background-color: rgb(48, 226, 226);
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <center><h1>::selection</h1></center>
+    <hr>
+    <section>
+        <div class="p1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae velit fuga, aliquam minus tenetur ad aspernatur ex omnis perferendis inventore aperiam voluptate sit quaerat suscipit, non recusandae quos autem sapiente.
+        </div>
+        <div class="p2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae velit fuga, aliquam minus tenetur ad aspernatur ex omnis perferendis inventore aperiam voluptate sit quaerat suscipit, non recusandae quos autem sapiente.
+        </div>
+        <div class="p3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae velit fuga, aliquam minus tenetur ad aspernatur ex omnis perferendis inventore aperiam voluptate sit quaerat suscipit, non recusandae quos autem sapiente.
+        </div>
+    </section>
+</body>
+</html>

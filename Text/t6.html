@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            border: 1 px solid #000;
+            padding: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.3rem;
+            line-height: 2;
+        }
+        .b1{
+            text-emphasis: filled double circle teal;
+            text-emphasis-position:over left ;
+        }
+        .b2{
+            text-emphasis: filled double circle teal;
+            text-emphasis-position:under left !important ;
+        }
+        .b3{
+            text-emphasis: filled double circle teal;
+            text-emphasis-position:over right ;
+            writing-mode: vertical-lr;
+        }
+    </style>
+</head>
+<body>
+    <p class="b1">Block 1 text</p>
+    <p class="b2">Block 2 text</p>
+    <p class="b3">Block 3 text</p>
+    
+</body>
+</html>

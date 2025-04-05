@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            padding: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: blueviolet;
+            width: 500px;
+             margin: auto;
+             border: 1px solid #000;
+             text-align: center;
+        }
+        .name{
+            color: red;
+        }
+        .name::before{
+            content: "mr.";
+            color: darkslategray;
+        }
+        .name::after{
+            content: "very good 🙌";
+        }
+        .heading{
+            font-weight: 600;
+            width: fit-content;
+            margin: auto;
+            position: relative;
+        }
+        .heading::before{
+            content: "";
+            position: absolute;
+            bottom: 20px;
+            left: -60px;
+            width: 50px;
+            height: 4px;
+            background-color: red;
+        }
+        .heading::after{
+            content: "";
+            position: absolute;
+            bottom: 20px;
+            right: -60px;
+            width: 50px;
+            height: 4px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>::before and ::after</h1></center><hr>
+    <div class="container">
+        <h2 class="name">john</h2>
+        <h2 class="name">smith</h2>
+        <h1 class="heading">this is the heading</h1>
+    </div>
+</body>
+</html>

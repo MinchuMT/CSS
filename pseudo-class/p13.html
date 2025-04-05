@@ -1,0 +1,87 @@
+html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 1.1px;
+        }
+        .container{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: lightblue;
+        }
+        input{
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            margin-top: 5px;
+            border: none;
+            outline: none;
+            border: 1.2px solid gray;
+            border-radius: 5px;
+        }
+        label{
+            font-weight: 100;
+        }
+        form h3{
+            margin-bottom: 10px;
+        }
+        
+        input:focus{
+            outline: 2px solid rebeccapurple;
+            outline-offset: 1.2px;
+            background-color: blue;
+        }
+        form button{
+            width: 100%;
+            padding: 8px;
+            font-size: 1rem;
+            font-weight: 300;
+            background-color: blueviolet;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          
+        }
+        form button:hover{
+            opacity: 0.7;
+        }
+        form button:focus{
+            transform: scale(0.8);
+        }
+      input:invalid{
+        outline: 2px solid blue;
+        outline-offset: 1.2px;
+      }
+      input:valid{
+        background-color: gray;
+        outline: 2px solid #fff;
+        outline-offset: 1.2px;
+      }
+    </style>
+</head>
+<body>
+    <form action="" autocomplete="on">
+        <h3>Create account</h3>
+        <label for="name">username</label>
+        <input type="text" placeholder="enter your name" name="name" id="name" required minlength="5">
+        <label for="name">email</label>
+        <input type="email" placeholder="enter your email" name="email" id="email" required>
+        <label for="name">phone</label>
+        <input type="text" placeholder=" your phone number" name="phone" id="phone" required minlength="10" maxlength="13">
+        <label for="">account number</label>
+        <input type="text" placeholder="Acxxxxxxxxx87" value="ac97476544312" readonly >
+        
+        <button type="button">Create account</button>
+    </form>
+</body>
+</html>

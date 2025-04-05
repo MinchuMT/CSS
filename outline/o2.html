@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            min-height: 60vh;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container form{
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .container form input{
+            width: 100%;
+            margin-top: 20px;
+            padding: 8px;
+            border: none;
+            outline: none;
+            border: 1.8px solid #ccc;
+            border-radius: 5px;
+            outline-offset: 2px;
+        }
+        input:focus{
+            outline: 1.8px solid red !important;
+        }
+        button{
+            width: 100;
+            padding: 10px;
+            background-color: blueviolet;
+            color: #fff;
+            border-radius: 4px;
+            margin-top: 30px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover{
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+   <section class="container">
+    <form action="">
+  <input type="text" placeholder="enter your name">
+  <input type="email" placeholder="enter email address">
+  <input type="password" placeholder="enter your password">
+  <input type="password" placeholder="enter your confirmation password">
+  <button type="submit">create account</button>
+
+    </form>
+
+   </section> 
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 1.1px;
+        }
+        .container{
+            display: flex;
+            gap: 20px;
+            padding: 5%;
+        }
+        .card{
+            padding: 20px;
+            border: 2px solid #000;
+            flex: 1;
+        }
+        .card:nth-child(even){
+            background-color: darkslategrey;
+            min-width: 200px;
+            border-radius: 100px;
+        }
+        .card:nth-child(odd){
+            background-color: darkseagreen;
+            min-width: 200px;
+        }
+        .headings{
+            text-align: center;
+        }
+        .headings h1{
+            padding: 20px;
+            border: 1px solid #000;
+            width: 200px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        .headings h1:nth-child(4){
+            background-color: lightblue;
+        }
+        .headings h1:first-child{
+            background-color: darkolivegreen;
+            width: 500px;
+        }
+        .headings h1:last-child{
+            background-color: dimgray;
+        }
+        .headings h1:nth-child(7){
+            background-color: pink;
+            border-radius: 100px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="card">
+            <h1>1</h1>
+        </div>
+        <div class="card">
+            <h1>2</h1>
+        </div>
+        <div class="card">
+            <h1>3</h1>
+        </div>
+        <div class="card">
+            <h1>4</h1>
+        </div>
+        <div class="card">
+            <h1>5</h1>
+        </div>
+        <div class="card">
+            <h1>6</h1>
+        </div>
+        <div class="card">
+            <h1>7</h1>
+        </div>
+        <div class="card">
+            <h1>8</h1>
+        </div>
+        <div class="card">
+            <h1>9</h1>
+        </div>
+        <div class="card">
+            <h1>10</h1>
+        </div>
+    </section>
+    <div class="headings">
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+
+    </div>
+</body>
+</html>
+    

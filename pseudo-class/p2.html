@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #mern,#mean,#python{
+            background-color: blue;
+            padding: 10px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        #mean:target{
+            display: block ;
+            background-color: red;
+        }
+        #mern:target{
+            display: block ;
+            background-color: rebeccapurple;
+        }
+        #python:target{
+            display: block !important;
+            background-color: blue;
+        }
+        .container{
+            display: flex;
+        }
+        .container.left{
+            width: 200px;
+            background-color: black;
+            height: 100vh;
+            overflow: auto;
+            list-style-type: none;
+            padding: 20px;
+        }
+        .container.left li{
+            padding: 10px;
+            background-color: #36363629;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .container ul li:hover{
+            background-color: aqua;
+        }
+        .container ul li:hover a {
+            background-color: #0c0c0c;
+        }
+        .container.left li a{
+            color: #fff;
+            text-decoration: none;
+        }
+        .right{
+            flex: 1;
+        }
+        .right section{
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="left">
+            <li><a href="#mern">MERN Fullstack</a></li>
+            <li><a href="#mean">MEAN Fullstack</a></li>
+            <li><a href="#python">PYTHON Fullstack</a></li>
+        </ul>
+        <main class="right">
+            <section id="mern">
+                <h1>MERN Fullstack</h1>
+            </section>
+            <section id="mean">
+                <h1>MEAN Fullstack</h1>
+            </section>
+            <section id="mern">
+                <h1>PYTHON Fullstack</h1>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

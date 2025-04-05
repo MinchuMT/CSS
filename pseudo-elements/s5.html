@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+           
+        }
+        .container{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .head{
+            width: 300px;
+            height: 150px;
+            border: 3px solid #A66E38;
+            outline: 5px solid #A66E38;
+            position: relative;
+          background-color: #5F8B4C;
+        
+        
+        }
+        .head::before{
+            content: "";
+            position: absolute;
+            width:10px;
+            height: 100px;
+            background-color: red;
+            border-radius: 100px;
+            bottom: -100px;
+            left: 30%;
+            transform: translateX(-50%);
+            background-color: #A66E38;             
+        }
+        .head::after{
+            content: "";
+            position: absolute;
+            width:10px;
+            height: 100px;
+            background-color: red;
+            border-radius: 100px;
+            bottom: -100px;
+            right: 30%;
+            transform: translateX(-50%);
+            background-color: #A66E38;             
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="head"></div>
+   </div> 
+</body>
+</html>

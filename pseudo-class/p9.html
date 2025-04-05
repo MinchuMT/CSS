@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .container div{
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            border: 2px solid #000;
+            padding: 30px;
+        }
+        .container div:not(.card2){
+            background-color: darkslategrey;
+        }
+        .container div:not(.card2)h1{
+            color: wheat;
+        }
+        h2:not(.heading3){
+      color: red;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>not</h1></center>
+    <hr>
+    <div class="container">
+        <div class="card1"><h1>block1</h1></div>
+        <div class="card1"><h1>block2</h1></div>
+        <div class="card1"><h1>block3</h1></div>
+        <div class="card1"><h1>block4</h1></div>
+    </div>
+    <center>
+        <h2 class="heading1">heading1</h2>
+        <h2 class="heading1">heading2</h2>
+        <h2 class="heading1">heading3</h2>
+        <h2 class="heading1">heading4</h2>
+    </center>
+</body>
+</html>
